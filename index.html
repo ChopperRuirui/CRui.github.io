@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="baidu-site-verification" content="8qNAcYNRz3" />
+	<meta charset="UTF-8"  content="让我们面对现实，让我们终于理想！" >
+	<title>乔巴瑞的个人网站</title>
+</head>
+<html>
+<head>
+<style type="text/css">
+	
+
+* { margin: 0;padding: 0;}
+body {background:#c73536;padding:0;font-size:14px}
+.center{
+   	width:1280px;
+    height:800px;
+    background:url(bg.jpg);
+    margin: 0;
+    padding: 0;
+}
+a{color:#393;}
+</style>
+<body>
+	<style type="text/css">
+  .spanstyle {
+    position:absolute;
+    visibility:visible;
+    top:-50px;
+    font-size:12pt; font-family:隶书;
+    color: 000012;
+   font-weight:bold;
+  }</style>
+   <a href="/blog/index.php">
+        <div class="center"></div>
+    </a>
+<h1 class="text-logo"><a href="http://aboutrui.com/blog/" title="AboutRui.com" rel="home"></a></h1>
+  
+<script>
+
+var x,y
+var step=20
+var flag=0
+var message="点击进入网站 "
+message=message.split("")
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    xpos[i]=-50}
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    ypos[i]=-50}
+function handlerMM(e){
+    x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+    y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+    flag=1}
+function makesnake() {
+    if (flag==1 && document.all) {
+        for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]       }
+        xpos[0]=x+step
+        ypos[0]=y
+        for (i=0; i<message.length-1; i++) {
+            var thisspan = eval("span"+(i)+".style")
+            thisspan.posLeft=xpos[i]
+            thisspan.posTop=ypos[i]     }   }
+    else if (flag==1 && document.layers) {
+        for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]       }
+        xpos[0]=x+step
+        ypos[0]=y
+            for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("document.span"+i)
+        thisspan.left=xpos[i]
+  thisspan.top=ypos[i]}   }
+var timer=setTimeout("makesnake()",30)}
+</script>
+<body onLoad="makesnake()" >
+<script>
+for (i=0;i<=message.length-1;i++) {
+document.write("<span id='span"+i+"'class='spanstyle'>")
+    document.write(message[i])
+    document.write("</span>")}
+if (document.layers){
+    document.captureEvents(Event.MOUSEMOVE);}
+document.onmousemove = handlerMM;
+</script>
+    <!--a href="/blog/index.php" title="点击进入我的博客！">
+        <div class="center"></div>
+    </a>
+    <h1 class="text-logo"><a href="http://aboutrui.com/blog/" title="About Rui.com" rel="home">About Rui.com</a></h1-->
+<!--h1 class="text-logo"><a href="http://aboutrui.com/blog/" title="About Rui.com" rel="home">About Rui.com</a></h1-->
+<!-- aboutrui.com Baidu tongji analytics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F01a0a422677a5600c1ba1a528a220267' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

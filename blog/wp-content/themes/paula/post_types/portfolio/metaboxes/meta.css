@@ -1,0 +1,16 @@
+
+#adminmenu #menu-posts-jawportfolio div.wp-menu-image {
+    background: url("portfolio-b.png") no-repeat scroll 7px 8px transparent;}
+    
+#adminmenu #menu-posts-jawportfolio:hover div.wp-menu-image, #adminmenu #menu-posts-jawportfolio.wp-has-current-submenu div.wp-menu-image {
+    background: url("portfolio-a.png") no-repeat scroll 7px 8px transparent;
+}    
+
+.item-title h4 { display: inline;}
+a.item-help {margin-left:10px}
+.item-help span {cursor: pointer;}
+.item p.help {display:none;}
+
+#portfolio .item {padding:10px;background-color: #FCFCFC;border: 1px solid #DFDFDF;margin-bottom: 5px;position: relative;}
+
+

@@ -1,0 +1,27 @@
+Paula changelog.
+
+Last update: 04.09. 2012
+
+VERSION 1.3
+--- add translated ready
+--- fix display plugins + sidebar
+--- fix bug in admin css
+--- fix content in slider
+
+VERSION 1.2
+--- add basic sample data
+--- add additional help in administration
+--- add more settings in blog
+--- fixed bug in blog layout
+--- simpler initial installation
+--- fix small css bugs
+--- fix display iPhone 
+
+VERSION 1.1
+--- fixed home thumbnails bug /html/home.php
+--- new twitter icons
+--- featured color combination
+--- small changes in css /css/templates.css
+
+VERSION 1.0
+--- start

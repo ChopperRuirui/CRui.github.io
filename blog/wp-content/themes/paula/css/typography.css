@@ -1,0 +1,121 @@
+hr {margin: 20px 0px 20px 0px;}
+ul, ol {list-style-position: outside;}
+ul li {list-style-image: url("../images/body/li-square.png");}
+.rt-wordpress ul, ol {padding-left: 30px;}
+.rt-wordpress h3 {margin-bottom: 15px;}
+.rt-wordpress h4 {line-height: 22px}
+.rt-wordpress h1, .rt-wordpress h2, .rt-wordpress h3, .rt-wordpress h4, .rt-wordpress h5 {
+    letter-spacing: 0;
+}
+
+/* NOTICE */
+.attention, #system-message dd.notice ul {
+    background: none repeat scroll 0 0 #FDF5D9;
+    border: 1px solid #FCEEC1;
+    color: #444444;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    padding: 15px;
+}
+.approved {
+    background: none repeat scroll 0 0 #D1EED1;
+    color: #444444;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    padding: 15px;
+}
+.notice, #system-message dd ul {
+    background: none repeat scroll 0 0 #DDF4FB;
+    border: 1px solid #C8EEF9;
+    color: #444444;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    padding: 15px;
+}
+.alert, #system-message .error ul {
+    background: none repeat scroll 0 0 #FDDFDE;
+    border: 1px solid #FBC9C8;
+    color: #444444;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 6px 6px 6px 6px;
+    font-weight: bold;
+    padding: 15px;
+}
+em.highlight {
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+
+em.highlight-blazeorange {
+    background: none repeat scroll 0 0 #FF6600;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-blue {
+    background: none repeat scroll 0 0 #154890;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-green {
+    background: none repeat scroll 0 0 #7ABA7A;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-lightblue {
+    background: none repeat scroll 0 0 #6699FF;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-orange {
+    background: none repeat scroll 0 0 #FF9900;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-pistachio {
+    background: none repeat scroll 0 0 #97C30A;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-red {
+    background: none repeat scroll 0 0 #e32b23;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-salmon {
+    background: none repeat scroll 0 0 #FF717E;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+em.highlight-teal {
+    background: none repeat scroll 0 0 #028482;
+    color: #FFFFFF; border-radius: 4px 4px 4px 4px;
+    font-style: normal; padding: 2px 5px;
+    text-shadow: none;font-weight: bold;
+}
+
+pre {
+    background: none repeat scroll 0 0 #eeefee;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+blockquote {
+    padding: 5px 0 0 35px;
+    background: url("../images/body/quote-up.png") no-repeat scroll 0 0 transparent;
+}
+blockquote p {
+    padding: 0 35px 5px 0;
+    background: url("../images/body/quote-down.png") no-repeat scroll 100% 100% transparent;
+}

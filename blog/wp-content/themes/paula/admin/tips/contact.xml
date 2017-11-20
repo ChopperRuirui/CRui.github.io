@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip id="contactname" label="Name"><![CDATA[Here you can write your name.]]></tip>
+	
+	<tip id="contactaddress" label="Address"><![CDATA[Here you can write your address.]]></tip>
+	
+	<tip id="contactphone" label="Phone"><![CDATA[Here you can write your phone number.]]></tip>
+	
+	<tip id="contactfax" label="Fax"><![CDATA[Here you can write your fax number.]]></tip>
+	
+	<tip id="contactemail" label="Email"><![CDATA[Here you can write your e-mail. E-mail will be used at all forms, in case that you will not select a different one by each form.]]></tip>
+	
+	<tip id="addressgooglemap" label="Address for Google Map"><![CDATA[Here you can write your address which will be used for Google map.]]></tip>
+	
+</gantrytips>

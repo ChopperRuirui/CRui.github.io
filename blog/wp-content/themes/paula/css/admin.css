@@ -1,0 +1,11 @@
+.admincss-field,.position-field {display:none;}
+#gantry-panel .inner-tabs label{text-decoration:underline;display:block;}
+/*background: url("../images/icons/icon-arrow2.png") no-repeat scroll 97% 50% #E3E3E3*/
+#gantry-panel .inner-tabs li.active label{background-color: #E3E3E3;border-top:2px solid #ffffff;border-bottom:1px solid #ffffff}
+.inner-panels .inner-panel .wrapper {background-color: #E3E3E3 !important}
+#gantry-panel .inner-tabs li.active label {display:block;width:180px!important;height:15px!important; 
+              background: url("../images/icons/admin-bar-sprite.png") no-repeat scroll 97% 50% #E3E3E3}
+#gantry-panel .inherit-overlay {background-color: transparent !important;}
+
+.inner-panels .inner-panel{background-color: #E3E3E3 !important}
+.inner-panels .inner-panel-1 {position: relative; float: left; top: 0px; z-index: 5; visibility: visible; opacity: 1;}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="Slider Settings">Select the setting of the slider. If you donÂ´t have any slideshow select All slides to see all pictures which you have uploaded to your slider (how to manage with your slides see in our documentation).</tip>
+	
+  <tip label="Content Settings">The Content Settings give you complete control over the various sections of your WordPress content layout. You can select categories, toggle functionality on and off as well as provide a custom query to isolate the exact content you wish to display.</tip>
+	
+	<tip label="Style Settings">The Style Settings panel in the Gantry based theme administration interface provides several options for configuring the main stylistic aspects of the template. While the default Gantry theme includes several options, you can easily add and configure many more based on your template's needs.</tip>
+	
+	<tip label="Gizmos Settings">The Gizmos Settings allow you to control the built-in functionality available in this theme. </tip>
+	
+	<tip label="Advanced Settings">The Advanced Settings panel in the Gantry based theme administration interface includes a variety of powerful features that you can take advantage off within your WordPress site.</tip>
+
+  <tip label="Contact Info">Type in your personal data which will be shown at your contact page. E-mail will be used at all forms, in case that you will not select a different one by each form.</tip>
+  
+  <tip label="Sample data">In case that you would like upload the sample data to make your website looks like our demo, please press the button. Our data will be imported. The pictures are not included, we have no rights to spread them.</tip>
+
+</gantrytips>

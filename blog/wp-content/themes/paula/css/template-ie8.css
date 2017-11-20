@@ -1,0 +1,25 @@
+/* 
+    Document   : template-ie8
+    Created on : 11.6.2012, 15:06:59
+    Author     : pialek
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.body-wrapper {filter: alpha(opacity=100);}
+
+#rt-top,
+#rt-logo-content,
+#rt-logo-background,
+#rt-navigation-content,
+#rt-navigation-background {filter: alpha(opacity=92);}
+#rt-slider .slider_shadow .post_category a, #rt-slider .bigimg .post_category a {filter: alpha(opacity=92) !important;;}
+.button:hover {filter: alpha(opacity=85);}
+#comments .comments-buttons a:hover {filter: alpha(opacity=85);}
+#comments-form .btn a:hover {filter: alpha(opacity=85);}
+.jaw_mod_contact .fc_mod_submit:hover {filter: alpha(opacity=85);}
+.jaw_contact .fc_submit:hover {filter: alpha(opacity=85);}

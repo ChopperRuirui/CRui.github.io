@@ -1,0 +1,315 @@
+<?php
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+if (is_category()) {
+    $post_count = $gantry->get('category-count');
+    $page_title = $gantry->get('category-page-title');
+    $custom_page_title = $gantry->get('category-custom-page-title');
+    $title = $gantry->get('category-title');
+    $title_link = $gantry->get('category-link-title');
+    $author = $gantry->get('category-meta-author');
+    $date = $gantry->get('category-meta-date');
+    $comments = $gantry->get('category-meta-comments');
+    $comments_link = $gantry->get('category-meta-link-comments');
+    $modified = $gantry->get('category-meta-modified');
+    $content = $gantry->get('category-content');
+    $readmore = $gantry->get('category-readmore');
+    $openlightbox = $gantry->get('category-open-lightbox');
+    $show_readmore = $gantry->get('category-read-more-link');
+}
+
+if (is_day() || is_month() || is_year() || is_author()) {
+    $post_count = $gantry->get('archive-count');
+    $page_title = $gantry->get('archive-page-title');
+    $custom_page_title = $gantry->get('archive-custom-page-title');
+    $title = $gantry->get('archive-title');
+    $title_link = $gantry->get('archive-link-title');
+    $author = $gantry->get('archive-meta-author');
+    $date = $gantry->get('archive-meta-date');
+    $comments = $gantry->get('archive-meta-comments');
+    $comments_link = $gantry->get('archive-meta-link-comments');
+    $modified = $gantry->get('archive-meta-modified');
+    $content = $gantry->get('archive-content');
+    $readmore = $gantry->get('archive-readmore');
+    $openlightbox = $gantry->get('archive-open-lightbox');
+    $show_readmore = $gantry->get('archive-read-more-link');
+}
+
+if (is_tag()) {
+    $post_count = $gantry->get('tags-count');
+    $page_title = $gantry->get('tags-page-title');
+    $custom_page_title = $gantry->get('tags-custom-page-title');
+    $title = $gantry->get('tags-title');
+    $title_link = $gantry->get('tags-link-title');
+    $author = $gantry->get('tags-meta-author');
+    $date = $gantry->get('tags-meta-date');
+    $comments = $gantry->get('tags-meta-comments');
+    $comments_link = $gantry->get('tags-meta-link-comments');
+    $modified = $gantry->get('tags-meta-modified');
+    $content = $gantry->get('tags-content');
+    $readmore = $gantry->get('tags-readmore');
+    $openlightbox = $gantry->get('tags-open-lightbox');
+    $show_readmore = $gantry->get('tags-read-more-link');
+}
+
+if (is_home() || is_front_page()){
+  $post_count = $gantry->get('blog-count');   
+    $custom_page_title = '';
+    $author = $gantry->get('blog-meta-author');
+    $date = '';   
+    $modified = '';    
+    $readmore = '';
+    $content = $gantry->get('blog-content');
+    $page_title = $gantry->get('blog-page-title');
+    $title = $gantry->get('blog-title');
+    $title_link = $gantry->get('blog-link-title');
+    $openlightbox = $gantry->get('blog-open-lightbox');
+    $show_readmore = $gantry->get('blog-read-more-link'); 
+    $author = $gantry->get('blog-meta-author');
+    $comments = $gantry->get('blog-meta-comments');
+    $comments_link = $gantry->get('blog-meta-link-comments');
+    
+    
+}
+
+
+
+
+$readmore_text = $gantry->get('readmore-text');
+
+$query = $wp_query->query;
+
+if (!is_array($query))
+    parse_str($query, $query);
+
+$custom_query = new WP_Query(array_merge($query, array('posts_per_page' => $post_count, 'paged' => $paged)));
+?>
+
+<?php if ($custom_query->have_posts()) : ?>
+
+    <?php if ($page_title) : ?>
+
+        <?php if ($custom_page_title != '') : ?>
+
+            <h1 class="rt-pagetitle"><?php echo strip_tags($custom_page_title); ?></h1>
+
+        <?php else : ?>
+
+            <?php $post = $posts[0]; ?>
+            <?php /* If this is a category archive */ if (is_category()) { ?>
+                <h1 class="rt-pagetitle"><?php _re('Category:'); ?> <?php single_cat_title(); ?></h1>
+                <?php
+                /* If this is a tag archive */
+            } elseif (is_tag()) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Posts Tagged'); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h1>
+                <?php
+                /* If this is a daily archive */
+            } elseif (is_day()) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Archive for'); ?> <?php the_time('F jS, Y'); ?></h1>
+                <?php
+                /* If this is a monthly archive */
+            } elseif (is_month()) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Archive for'); ?> <?php the_time('F, Y'); ?></h1>
+                <?php
+                /* If this is a yearly archive */
+            } elseif (is_year()) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Archive for'); ?> <?php the_time('Y'); ?></h1>
+                <?php
+                /* If this is an author archive */
+            } elseif (is_author()) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Author Archive'); ?></h1>
+                <?php
+                /* If this is a paged archive */
+            } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {
+                ?>
+                <h1 class="rt-pagetitle"><?php _re('Blog Archives'); ?></h1>
+            <?php } ?>
+
+        <?php endif; ?>
+
+    <?php endif; ?>
+
+    <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+        <!-- Begin Post -->
+
+        <div class="rt-article">
+            <div class="blog-blog1s">
+                <div class="rt-article-bg">
+                    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+                        <?php if ($title) : ?>
+
+                            <!-- Begin Title -->
+
+                            <div class="blog-header">
+                                <div class="blog-title">
+                                    <?php if ($title_link) : ?>
+                                        <h2 class="title">
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                                        </h2>
+                                    <?php else : ?>
+                                        <h2 class="title">
+                                            <?php the_title(); ?>
+                                        </h2>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="blog-date">
+                                    <div class="blog-date-content">
+                                        <div class="day">
+                                            <span ><?php the_time('d') ?></span>
+                                        </div>
+                                        <div class="month">
+                                            <span><?php the_time('M') ?></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <!-- End Title -->
+
+                        <?php endif; ?>
+
+                        <div class="rt-article-content">
+                            <!-- Begin Post Content -->
+                            <div class="blog-content">
+                                <?php if (function_exists('the_post_thumbnail') && has_post_thumbnail()) { ?>
+                                    <?
+									
+                                    $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'small');
+                                    ?>
+                                    <?php if ($openlightbox) { ?>
+                                    <div class="blog-article-image">
+                                        <a class="blog-article-image-link" href="<?php echo $src[0]; ?>" rel="prettyPhoto">
+                                        <img class="blog-image"
+                                        src="<?php echo get_template_directory_uri(); ?>/scripts/timthumb.php?src=<?php echo $src[0]; ?>&amp;w=256&amp;zc=1" alt="<?php echo htmlspecialchars($title); ?>"/>
+                                        </a>
+                                    </div>     
+                                    <?php } else { ?>
+                                        <div class="blog-article-image">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/scripts/timthumb.php?src=<?php echo $src[0]; ?>&w=256&zc=1" />
+                                        </div>                                            
+                                    <?php } ?>
+                                <?php } ?>
+                                <?php if ($content == 'content') { ?>
+                                <?php the_content(); ?>
+                                <?php } else { ?>
+                                <?php the_excerpt(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="clear"></div>
+                                                        <?php if ($comments || $date || $modified || $author) : ?>
+
+                                <!-- Begin Meta -->
+                                <div class="blog-info">
+                                    <div class="blog-article-info">   
+                                        <div class="rt-articleinfo">
+                                             <?php if (is_sticky(get_the_ID())) { ?>
+						<span class="rt-sticky"><?php _e('Featured','paula'); ?></span>
+					    <?php } ?>
+                                            <span class="rt-category  <?php echo (is_sticky(get_the_ID()))?'noborder':''; ?>"><?php _re('Category:'); ?>
+                                            <?php
+                                            foreach((get_the_category()) as $category) { 
+                                                echo '<a href="'.get_category_link($category->term_id ).'">'.$category->cat_name.'</a>';
+                                            } 
+                                            ?>
+                                            </span>    
+                                            <?php if ($author) : ?>
+
+                                                <!-- Begin Author -->
+
+                                                <span class="rt-author"><?php _re('Written by'); ?> <span><?php the_author(); ?></span></span>
+
+                                                <!-- End Author -->
+
+                                            <?php endif; ?>
+
+                                            <?php if ($comments) : ?>
+
+                                                <!-- Begin Comments -->
+                                                <span class="rt-comment">
+                                                <?php if ($comments_link) : ?>                                                    
+                                                        <a href="<?php the_permalink(); ?>#comments">
+                                                            <span class="rt-comment-text"><?php comments_number(_r('0 Comments'), _r('1 Comment'), _r('% Comments')); ?></span>
+                                                        </a>                                                    
+
+                                                <?php else : ?>                                                    
+                                                        <span class="rt-comment-text"><?php comments_number(_r('0 Comments'), _r('1 Comment'), _r('% Comments')); ?></span>
+                                                <?php endif; ?>
+                                                </span>
+                                                <!-- End Comments -->
+
+                                            <?php endif; ?>
+
+                                        </div>
+                                    </div>                    
+                                </div>
+                                <!-- End Meta -->
+
+                            <?php endif; ?>
+                            
+                                
+                            <?php if ($show_readmore) { ?>    
+                            <?php // if (preg_match('/<!--more(.*?)?-->/', $post->post_content)) : ?>
+                                <div class="blog-article-readmore">
+                                <p class="rt-readon-surround">
+                                    <?php if(strlen($readmore_text) > 0) { ?>
+                                    <a href="<?php the_permalink(); ?>" class="readon"><span><?php echo  $readmore_text; ?></span></a>
+                                    <?php } else { ?>
+                                    <a href="<?php the_permalink(); ?>" class="readon"><span><?php _re('Learn more ...'); ?></span></a>
+                                    <?php } ?>
+                                </p>
+                                </div>
+                            <?php //endif; ?>
+                            <?php } ?>
+
+                            <div class="clear"></div>
+
+                            <!-- End Post Content -->
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Post -->
+
+    <?php endwhile; ?>
+<div class="blog-item-separator"></div>
+     <!-- Begin Navigation -->
+            <?php if($gantry->get('jawpagenation') && function_exists('pagination')) { pagination($custom_query->max_num_pages); } else { ?> 
+                <?php if ($custom_query->max_num_pages > 1) : ?>
+
+                    <div class="rt-pagination nav">
+                        <div class="alignleft">
+                            <?php next_posts_link('&laquo; ' . _r('Older Entries'), $custom_query->max_num_pages); ?>
+                        </div>
+                        <div class="alignright">
+                            <?php previous_posts_link(_r('Newer Entries') . ' &raquo;', $custom_query->max_num_pages) ?>
+                        </div>
+                        <div class="clear"></div>
+                    </div><br />
+
+                <?php endif; ?>
+            <?php } ?>    
+
+  <!-- End Navigation -->
+
+<?php else : ?>
+
+    <h1 class="rt-pagetitle">
+        <?php _re("Sorry, but there aren't any posts matching your query."); ?>
+    </h1>
+
+<?php endif; ?>
+
+<?php wp_reset_query(); ?>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+<name>paula完美汉化主题</name>
+    <version>1.4</version>
+    <creationDate>July 15, 2012</creationDate>
+    <author>Phoenix</author>
+    <authorEmail>394370465@qq.com</authorEmail>
+    <authorUrl>http://www.99fast.com</authorUrl>
+    <copyright>${copyright}</copyright>
+    <license>${licence}</license>
+    <description>${project.descritpion}</description>
+    <positions>
+
+	<position id="sidebar" name="Sidebar" max_positions="3">边栏</position>        
+        <position id="logo" name="Logo" max_positions="1">logo</position>
+        <position id="top-a" name="Top Left" max_positions="1">顶部左</position>
+        <position id="top-b" name="Top Right a" max_positions="2">顶部右A</position>
+        <position id="top-c" name="Top Right b" max_positions="2">顶部右B</position>
+        
+        <position id="navigation" name="Navigation" max_positions="1">导航</position>
+        <position id="slider" name="Slider" max_positions="1">滑块</position>
+	<position id="featured-right" name="Feature Right" max_positions="1">功能右</position>
+        <position id="slnav" name="Slider Navigation" max_positions="1">滑块导航</position>
+        
+        <position id="breadcrumb" name="Breadcrumb" max_positions="1">Breadcrumbs</position>
+        
+                
+        <position id="footer-left-a" name="Footer Left a" max_positions="2">底部左A</position>
+        <position id="footer-left-b" name="Footer left b" max_positions="2">底部左B</position>
+        <position id="footer-right-a" name="Footer Right" max_positions="1">底部右A</position>
+        
+        <position id="copyright" name="Copyright" max_positions="1">版权</position>
+       
+        <position id="analytics" name="Analytics" max_positions="1">网站统计</position>
+        <position id="debug" name="Debug" max_positions="1">调试</position>
+    </positions>
+    <config>
+        <fields name="template-options">
+            <fieldset name="toolbar-panel" label="工具栏">
+                <field name="presets" type="preset" mode="scroller" default="preset1" description="STYLE_PRESETS_DESC" setbyurl="true" setinoverride="false" panel_position="left" show_label="false" />
+            </fieldset>
+            <fieldset name="overview" label="概述">
+                <field name="paula" type="paula" value="" panel_position="hiddens" />
+                <field name="template_full_name" type="hidden" default="Paula"/>
+                <field name="template_author" type="hidden" default="Jaw Templates"/>
+                <!--<field name="updater" type="updater" panel_position="right" show_label="false" />-->
+                <!--<field name="diagnostic" type="diagnostic" panel_position="right" show_label="false" />-->
+                <field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false"/>
+                <field name="grid_system" type="hidden" default="12"/>
+                <field name="template_prefix" type="hidden" default="gantry-"/>
+                <field name="cookie_time" type="hidden" default="31536000"/>
+                <field name="copy_lang_files_if_diff" type="hidden" default="1"/>
+                <field name="custom_widget_variations" type="hidden" default="1"/>
+
+                <!--<field name="presets" type="preset" mode="scroller" default="preset10" label="STYLE_PRESETS" description="STYLE_PRESETS_DESC" setbyurl="true" setinoverride="false" panel_position="right" />-->
+
+                <!--<field name="menuids" type="menuitemhead" default="1" label="" description="MENUITEMSIDS_DESC"/>-->
+
+                <field name="intro" type="html" panel_position="left" show_label="false">
+                    <html><![CDATA[
+					<img src="{template_preview}" width="206" height="150" class="template-preview" alt="" />
+					<h1>{template_name} <span>v{template_version}</span></h1>
+					<p>{template_name}是用Gantry框架开发而成，功能强大界面美观，是新闻站个人站图片展的最佳选择。主题可自定义风格，还有多个风格可供选择.  </p>
+
+					<h2>{template_name}汉化版</h2>
+
+					<p>{template_name}汉化版是由{template_name}英文版翻译而来，实现后台完全中文化。使国内用户可以轻松的使用与设置。可能有些地方翻译的时候不是很到位，例如用词不合适中文错别字什么的，希望大家告诉我们让我们的主题翻译的更加完善。更希望大家一起参与，把队伍强大起来！！</p>
+					]]>
+                    </html>
+                </field>
+                <field name="overview2" type="html" panel_position="left" show_label="false">
+                    <html><![CDATA[
+					<h2>快久主题讨论QQ群①：63156313；QQ群②：67057554；有什么问题可以加群讨论！！赞助本站：1216812128@qq.com(顾晓江)获取全部免费技术支持！！</h2>
+
+					]]>
+                    </html>
+                </field>
+                <field name="overview" type="html" panel_position="left" show_label="false">
+                    <html><![CDATA[
+					<h2>快久主题站介绍</h2>
+
+					<p>快久主题站是由Phoenix开办，认识众多wordpress爱好者！收集国外知名主题进行汉化，提供给国内朋友使用。我们的主题全部免费，我们靠的是对wordpress的热爱。</p>
+
+					<p>更多主题下载<a href="http://www.99fast.com">快久主题站http://www.99fast.com</a></p>
+					]]>
+                    </html>
+                </field>
+            </fieldset>
+            
+            
+            <fieldset name="slider" label="滑块">
+                <field name="slidersettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>滑块设置</h2>
+
+					<p>选择设置值的滑块。如果你没有任何幻灯片选择所有幻灯片查看所有图片上传到您的滑块（如何管理您的幻灯片看我们的文档）。</p>
+					]]>
+                    </html>
+                </field>
+                <field name="slidertips" type="tips" tab="slider" panel_position="right" show_label="false"/>
+				
+                <field name="loadposition-enabled" type="hidden" default="1" />
+
+                <fields name="slider" type="chain" label="Jaw滑块" setinoverride="false">
+                    <field name="enabled" type="toggle" default="1" label="启用" setinoverride="false" enabler="true" />                    
+                    <field name="animspeed" type="text" default="3000" size="5" label="动画速度(毫秒)" />
+                    <field name="jawslides" type="taxonomyselector" default="jawall"  slug="slideshows" label="源图像" />
+                </fields>
+                
+                <fields name="slidernav" type="chain" label="Jaw滑块导航" setinoverride="false">
+                    <field name="enabled" type="toggle" default="1" label="启用" setinoverride="false" enabler="true" />                    
+                </fields>
+				
+                
+            </fieldset>
+            <fieldset name="content" label="内容">
+                <field name="contentsettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>内容设置</h2>
+
+					<p>Use the tabs on the left to have complete control over the various sections of your WordPress content layout.  You can select categories, toggle functionality on and off as well as provide a custom query to isolate the exact content you wish to display.</p>
+					]]>
+                    </html>
+                </field>
+                <field name="contenttips" type="tips" tab="content" panel_position="right" show_label="false"/>
+                <field name="jawpagenation" type="toggle" default="1" label="Jaw分页" />
+                <field name="readmore-text" type="text" default="" class="" label="Read more文本" />  
+                <fields type="innertabs" show_label="false" >
+                                    
+                    <fields name="blog" type="grouped" label="博客" show_label="false">
+                        <!--<field name="cat" type="text" default="" class="text-regular" label="Blog Category" />-->
+                        <field name="categorytitle" type="text" default="" label="标题" class="text-long" setinoverride="true"/>          
+                        <field name="categorydesc" type="text" default="" label="描述" class="text-long" setinoverride="true"/>
+		        
+                        <field name="count" type="text" class="text-short" default="3" label="文章统计"/>
+                        <field name="categoryblogstyle" type="selectbox" default="blog1s" label="博客样式">
+                            <option value="blog1s">Blog 1 Small Images</option>
+                            <option value="blog1b">Blog 1 Big Images</option>
+                            <option value="blog2s">Blog 2 Small Images</option>
+                            <option value="blog2b">Blog 2 Big Images</option>
+                            <option value="blogfulls">Blog FullWidth Small Images</option>
+                            <option value="blogfullb">Blog FullWidth Big Images</option>                                                                
+                        </field>
+                       
+                                
+                        <field name="content" type="selectbox" default="excerpt" label="博客内容">
+                            <option value="content">Content</option>
+                            <option value="excerpt">Excerpt</option>
+                        </field>
+                       
+                        
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="1" label="标题链接"/>
+                        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="read-more-link" type="toggle" default="1" label="显示read more"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="meta-link-comments" type="toggle" default="1" label="评论链接"/>
+                    </fields>
+
+                    <fields name="page" type="grouped" label="页面">
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="0" label="标题链接"/>
+                        <field name="title-style" type="selectbox" default="simple" label="标题样式">
+                            <option value="simple">Simple</option>
+                            <option value="type1">Type 1</option>
+                            <option value="type2">Type 2</option>
+                            <option value="type3">Type 3</option>
+                        </field>
+                        <field name="meta-author" type="toggle" default="0" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="0" label="评论Meta数据"/>
+                        <field name="comments-form" type="toggle" default="1" label="自定义表单"/>
+                    </fields>
+                    
+                    <fields name="contactpage" type="grouped" label="联系页面">
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="1" label="标题链接"/>
+                        <field name="contactinfo" type="toggle" default="1" label="显示联系信息"/>
+                        <field name="contactmail" type="toggle" default="0" label="显示联系邮箱"/>
+                        <field name="contactform" type="toggle" default="1" label="显示联系表单"/>
+                        <field name="contactgooglemap" type="toggle" default="1" label="Google地图"/>
+                        <field name="contactgooglemapwidth" type="text" default="580" label="Google地图宽度"/>
+                        <field name="contactgooglemapheight" type="text" default="600" label="Google地图高度"/>
+                        
+                        <field name="subject" type="text" label="E-mail主题"  default="Contact Form" />
+			<field name="captcha" type="toggle" label="使用验证码" default="1" />
+			<field name="thanks" type="text" label="感谢信息"  default="Your email has been sent. Thank you." />
+			<field name="error_name" type="text" label="名字错误跳出信息"   default="Your name is required" />
+			  
+			<field name="error_mail" type="text" label="邮箱错误跳出信息"  default="Email address entered is invalid" />
+			<field name="error_text" type="text" label="内容错误跳出信息"  default="Please enter a message" />
+			<field name="error_captcha" type="text" label="验证码错误跳出信息"  default="Incorrect security code" />
+			<field name="submit_button" type="text" label="按钮名称"  default="Send message" />
+			<field name="label_name" type="text" label="名称输入标签名称"  default="Name *" />
+			<field name="label_mail" type="text" label="邮箱输入标签名称"  default="E-mail *" />
+		    </fields>
+
+                    <fields name="post" type="grouped" label="文章">
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="title-link" type="toggle" default="0" label="标题链接"/>
+                        <field name="poststyle" type="selectbox" default="item1s" label="文章样式">
+                            <option value="item1s">Small Images</option>
+                            <option value="item1b">Big Images</option>
+                            <option value="itemfulls">FullWidth Small Images</option>                            
+                            <option value="itemfullb">FullWidth Big Images</option>
+                        </field>
+                        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="tags" type="toggle" default="1" label="显示Tags"/>
+                        <field name="footer" type="toggle" default="0" label="文章页脚"/>
+                        <field name="comments-form" type="toggle" default="1" label="评论表单"/>
+                        
+                        <field name="twitter-enabled" type="toggle" default="1" label="Twitter按钮"/>
+                        <field name="gplus-enabled" type="toggle" default="1" label="谷歌加号按钮"/>
+                        
+                        <fields name="facebook" type="chain" label="Facebook按钮" setinoverride="true">
+                            <field name="enabled" type="toggle" default="1" label="启用" setinoverride="true"/>
+                            <field name="locate" type="text" default="en_US" label="定位" setinoverride="true"/>
+                        </fields>
+                    </fields>
+
+                    <fields name="category" type="grouped" label="分类">
+                        <field name="count" type="text" class="text-short" default="3" label="文章统计"/>
+                        <field name="content" type="selectbox" default="excerpt" label="分类内容">
+                            <option value="content">Content</option>
+                            <option value="excerpt">Excerpt</option>
+                        </field>
+                        <field name="categoryblogstyle" type="selectbox" default="blog1s" label="博客样式">
+                            <option value="blog1s">Blog 1 Small Images</option>
+                            <option value="blog1b">Blog 1 Big Images</option>
+                            <option value="blog2s">Blog 2 Small Images</option>
+                            <option value="blog2b">Blog 2 Big Images</option>
+                            <option value="blogfulls">Blog FullWidth Small Images</option>
+                            <option value="blogfullb">Blog FullWidth Big Images</option>                                                                
+                        </field>
+                                  
+                        <field name="categorytitle" type="text" default="" label="标题" class="text-long" setinoverride="true"/>          
+                        <field name="categorydesc" type="text" default="" label="描述" class="text-long" setinoverride="true"/>
+		        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="read-more-link" type="toggle" default="1" label="显示read more"/>    	
+                        <field name="page-title" type="toggle" default="0" label="显示页面标题" />
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="1" label="标题链接"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="meta-link-comments" type="toggle" default="1" label="评论链接"/>
+                    </fields>
+
+                    <fields name="archive" type="grouped" label="存档">
+                        <field name="count" type="text" class="text-short" default="3" label="文章统计"/>
+                        <field name="content" type="selectbox" default="excerpt" label="存档内容">
+                            <option value="content">Content</option>
+                            <option value="excerpt">Excerpt</option>
+                        </field>
+                        <field name="categoryblogstyle" type="selectbox" default="blog1s" label="博客样式">
+                            <option value="blog1s">Blog Small Images</option>
+                            <option value="blog1b">Blog Big Images</option>
+                            <option value="blogfulls">Blog FullWidth Small Images</option>
+                            <option value="blogfullb">Blog FullWidth Big Images</option>                                                                
+                        </field>	
+		        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="read-more-link" type="toggle" default="1" label="显示read more"/>    	
+                        <field name="page-title" type="toggle" default="1" label="显示页面标题" />
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="1" label="标题链接"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="meta-link-comments" type="toggle" default="1" label="评论链接"/>
+                    </fields>
+
+                    <fields name="tags" type="grouped" label="标签">
+                        <field name="count" type="text" class="text-short" default="3" label="文章统计"/>
+                        <field name="content" type="selectbox" default="excerpt" label="Tags内容">
+                            <option value="content">Content</option>
+                            <option value="excerpt">Excerpt</option>
+                        </field>
+                        <field name="categoryblogstyle" type="selectbox" default="blog1s" label="博客样式">
+                            <option value="blog1s">Blog Small Images</option>
+                            <option value="blog1b">Blog Big Images</option>
+                            <option value="blogfulls">Blog FullWidth Small Images</option>
+                            <option value="blogfullb">Blog FullWidth Big Images</option>                                                                
+                        </field>
+                        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="read-more-link" type="toggle" default="1" label="显示read more"/>  
+                        <field name="custom-page-title" type="text" default="" class="text-regular" label="自定义页面标题" />
+                        <field name="page-title" type="toggle" default="1" label="显示页面标题" />
+                        <field name="title" type="toggle" default="1" label="链接"/>
+                        <field name="link-title" type="toggle" default="1" label="标题链接"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="meta-link-comments" type="toggle" default="1" label="评论链接"/>
+                    </fields>
+
+                    <fields name="search" type="grouped" label="搜索">
+                        <field name="count" type="text" class="text-short" default="3" label="文章统计"/>
+                        <field name="content" type="selectbox" default="excerpt" label="搜索内容">
+                            <option value="content">Content</option>
+                            <option value="excerpt">Excerpt</option>
+                        </field>
+                        <field name="categoryblogstyle" type="selectbox" default="search1s" label="博客样式">
+                            <option value="search1s">Search Small Images</option>
+                            <option value="search1b">Search Big Images</option>
+                            <option value="searchfulls">Search FullWidth Small Images</option>
+                            <option value="searchfullb">Search FullWidth Big Images</option>                                                                
+                        </field>
+                        <field name="open-lightbox" type="toggle" default="1" label="在灯箱中打开缩略图"/>
+                        <field name="read-more-link" type="toggle" default="1" label="显示 read more"/> 
+                        <field name="page-title" type="toggle" default="1" label="显示页面标题" />
+                        <field name="title" type="toggle" default="1" label="标题"/>
+                        <field name="link-title" type="toggle" default="1" label="标题；链接"/>
+                        <field name="meta-author" type="toggle" default="1" label="作者Meta数据"/>
+                        <field name="meta-comments" type="toggle" default="1" label="评论Meta数据"/>
+                        <field name="meta-link-comments" type="toggle" default="1" label="评论链接"/>
+                    </fields>
+                    
+                    <fields name="errorpage" type="grouped" label="404页面">                        
+                        <field name="content" type="textarea" cols="40" rows="15" default="" label="自定义HTML内容"/>                         
+                    </fields>    
+                </fields>
+            </fieldset>
+            <fieldset name="style" label="样式">
+
+                <field name="stylesettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>样式设置</h2>
+
+					<p>主题管理界面的样式设置面板中提供了几个选项配置的模板类型的主要方面。虽然默认的主题，包括了几个选项，您可以很容易地添加和配置许多基于模板的需求。</p>
+					]]>
+                    </html>
+                </field>
+                <field name="styletips" type="tips" tab="style" panel_position="right" show_label="false"/>
+
+                <field name="cssstyle" type="selectbox" default="red" label="CSS样式" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="red">Red</option>
+                    <option value="blazeorange">Blazeorange</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="lightblue">Lightblue</option>
+                    <option value="orange">Orange</option>
+                    <option value="pistachio">Pistachio</option>
+                    <option value="salmon">Salmon</option>
+                    <option value="teal">Teal</option>
+                    <option value="custom">Custom</option>
+                </field>
+
+                <field name="background-color" type="selectbox" default="black" label="背景颜色" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                </field>
+                
+                <field name="background-image" type="selectbox" default="fix" label="背景图片" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="none">None</option>
+                    <option value="float">Float</option>
+                    <option value="fix">Fix</option>
+                </field>
+                   
+                <field name="background-patern" type="selectbox" default="yes" label="背景图案" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </field>
+                
+                <field name="maincolor" type="colorchooser" default="#31302f" label="自定义主体颜色" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true"/>
+
+                <field name="bgcolor" type="colorchooser" default="#1a1a19" label="自定义背景颜色" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true"/>
+
+                <field name="linkcolor" type="colorchooser" default="#31302f" label="自定义链接颜色" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true"/>
+
+                <field name="linkhovercolor" type="colorchooser" default="#31302f" label="自定义链接经过颜色" setbyurl="true" setinsession="true"
+                       setbysession="true" setincookie="true" setbycookie="true"/>
+                
+                <field name="thumbnails-enabled" type="hidden" default="1"/>
+
+                <fields name="thumb" type="chain" label="Thumbnail尺寸" setinoverride="false" >
+                    <field name="width" type="text" class="text-short" default="170" label="宽度" setinoverride="false" />
+                    <field name="height" type="text" class="text-short" default="138" label="高度" setinoverride="false" />
+                    <field name="position" type="selectbox" default="img-left" label="位置" setinoverride="false">
+                        <option value="img-left">左</option>
+                        <option value="img-right">右</option>
+                        <option value="">无</option>
+                    </field>
+                </fields>
+
+            <field name="webfonts-enabled" type="hidden" default="1" label="显示"/>
+            <field name="webfonts-source" type="hidden" default="google" label="WEBFONTS_SOURCE" />
+
+            <fields name="fonttitle" type="chain" label="标题字体">
+                <field name="title" type="fonts" default="Microsoft YaHei" label="FONT_FAMILY" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="geneva">Geneva</option>
+					<option value="Microsoft YaHei">Microsoft YaHei</option>
+					<option value="Open Sans">Open Sans</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="lucida">Lucida</option>
+                    <option value="optima">Optima</option>
+                    <option value="palatino">Palatino</option>
+                    <option value="trebuchet">Trebuchet</option>
+                </field>
+                <field name="size" type="hidden" default="default" setbyurl="true"/>
+            </fields>
+
+            <fields name="fonttext" type="chain" label="文字字体">
+                <field name="text" type="fonts" default="Microsoft YaHei" label="FONT_FAMILY" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                    <option value="geneva">Geneva</option>
+					<option value="Microsoft YaHei">Microsoft YaHei</option>
+					<option value="Open Sans">Open Sans</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="lucida">Lucida</option>
+                    <option value="optima">Optima</option>
+                    <option value="palatino">Palatino</option>
+                    <option value="trebuchet">Trebuchet</option>
+                </field>
+                <field name="size" type="hidden" default="default" setbyurl="true"/>
+            </fields>
+        
+                <field name="wordpress-comments" type="toggle" default="1" label="使用wordpress评论"/>
+                
+                <field name="customcss" default="" type="textarea" label="自定义CSS" class="text-textarea" rows="5" cols="30" />
+            </fieldset>
+            <fieldset name="gizmos" label="小玩意">
+                <field name="gizmosettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>小玩意设置</h2>
+
+					<p>小玩意设置可以使你控制主题内部功能. 查看下面的帮助信息，弄懂小玩意设置的所有细节和怎么设置和设置小玩意。</p>
+					]]>
+                    </html>
+                </field>
+                <field name="gizmostips" type="tips" tab="gizmos" panel_position="right" show_label="false"/>
+                <field name="styledeclaration-enabled" type="hidden" default="1"/>
+                <field name="styledeclaration-priority" type="hidden" default="1"/>
+
+                <field name="belatedpng-priority" type="hidden" default="8"/>
+
+                <fields name="pagesuffix" type="chain" label="Page类后缀">
+                    <field name="enabled" type="toggle" default="0" label="启用" enabler="true" />
+                    <field name="class" type="text" default="" class="text-long" label="类"/>
+                    <field name="priority" type="hidden" default="2"/>
+                </fields>
+
+                <fields name="feedlinks" type="chain" label="Feed链接">
+                    <field name="enabled" type="toggle" default="1" label="显示" enabler="true" />
+                    <field name="priority" type="hidden" default="1"/>
+                </fields>
+
+                <field name="ie6-priority" type="hidden" default="5"/>
+
+                <fields name="ie6warn" type="chain" label="IE6警告">
+                    <field name="enabled" type="toggle" default="1" label="显示" enabler="true" />
+                    <field name="delay" type="text" default="2000" label="延时" class="text-short"/>
+                    <field name="priority" type="hidden" default="9"/>
+                </fields>
+
+                <field name="iphonegradients-priority" type="hidden" default="4"/>
+
+                <field name="iphoneimages-priority" type="hidden" default="6"/>
+
+                <field name="jstools-priority" type="hidden" default="10"/>
+
+                <field name="rtl-priority" type="hidden" default="7"/>
+
+                <fields name="smartload" type="chain" label="智能加载图片">
+                    <field name="enabled" type="toggle" default="0" label="显示" enabler="true" />
+                    <field name="text" type="text" default="50" label="偏移Y" class="text-short"/>
+                    <!--<field name="ignores" type="text" default="com_contact" label="Component Ignores"-->
+                    <!--class="text-medium"/>-->
+                    <field name="exclusion" type="text" default="" label="XPath Ignores" class="text-long"/>
+                    <field name="priority" type="hidden" default="11"/>
+                </fields>
+                
+                <field name="childcss-priority" type="hidden" default="100"/>
+
+                <field name="thumbnails-priority" type="hidden" default="1"/>
+
+                <fields name="title" type="chain" label="自定义标题Tag">
+                    <field name="format" type="text" default="" label="标题格式:" class="text-long"/>
+                    <field name="priority" type="hidden" default="5"/>
+                </fields>
+
+                <field name="webfonts-priority" type="hidden" default="5"/>
+
+                <fields name="widgetshortcodes" type="chain" label="工具段代码">
+                    <field name="enabled" type="toggle" default="1" label="启用" enabler="true" />
+                    <field name="priority" type="hidden" default="2"/>
+                </fields>
+                
+                <fields name="rokstyle" type="chain" label="RokStyle">
+                    <field name="enabled" type="toggle" default="1" label="启用" enabler="true" />
+                    <field name="priority" type="hidden" default="5"/>
+                </fields>
+                
+                <fields name="analytics" type="chain" label="Analytics统计">
+                    <field name="enabled" type="toggle" default="0" label="启用" enabler="true" />
+                    <field name="code" type="text" default="" label="Code" class="text-long" />
+                    <field name="priority" type="hidden" default="3"/>
+                </fields>
+
+            </fieldset>
+            
+            <fieldset name="advanced" description="" label="高级选项">
+
+                <field name="advancedsettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>高级设置</h2>
+
+					<p>在主题管理界面的高级设置面板里包含了多种强大的功能，你可以利用在你的WordPress网站内。请参考下面的帮助信息，每个设置细节对你的主题都是有用的。</p>
+					]]>
+                    </html>
+                </field>
+                <field name="advancedtips" type="tips" tab="advanced" panel_position="right" show_label="false"/>
+		<field name="iphone-enabled" type="hidden" default="0" label="iPhone Enabled"/>		
+                <field name="loadposition-enabled" type="hidden" default="1" />
+
+                <fields name="cache" type="chain" label="主题缓存" setinoverride="false">
+                    <field name="enabled" type="toggle" default="0" label="启用" setinoverride="false" enabler="true" />
+                    <field name="time" type="text" default="900" label="缓存时间" class="text-short"
+                           description="缓存的超时时间以毫秒为单位" setinoverride="false"/>
+                </fields>
+
+                <fields name="gzipper" type="chain" label="压缩" setinoverride="false">
+                    <field name="enabled" type="toggle" default="0" label="启用" setinoverride="false" enabler="true" />
+                    <field name="time" type="text" default="600" label="缓存时间" class="text-short" setinoverride="false"/>
+                    <field name="expirestime" type="text" default="1440" label="过期时间" class="text-short" setinoverride="false"/>
+                    <field name="stripwhitespace" type="toggle" default="1" label="去除空白"
+                           setinoverride="false"/>
+                </fields>
+
+                <fields name="inputstyling" type="chain" label="输入样式">
+                    <field name="enabled" type="toggle" default="0" label="启用" enabler="true" />
+                    <field name="exclusions" type="text" default="'.content_vote'" label="排除"
+                           class="text-long"/>
+                </fields>
+
+                <field name="component-enabled" type="toggle" default="1" label="内容"/>            
+
+                <field name="buildspans-enabled" type="toggle" default="1" label="标题Spans"/>
+                
+                <field name="texturize-enabled" type="toggle" default="0" label="禁文本转换"/>
+
+            </fieldset>
+            
+            
+            <fieldset name="contact" description="" label="联系信息">
+
+                <field name="contactsettings" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>联系设置</h2>
+                                        
+					<p>输入你想在信息页面显示的个人信息. 邮箱将用于全部表单, 以便于你不需要为每一个表单设置不同的邮箱。</p>
+					]]>
+                    </html>
+                </field>
+                <field name="contacttips" type="tips" tab="contact" panel_position="right" show_label="false"/>
+				
+                
+                
+                <field name="contactname" type="text" default="Your name" label="名称"/>
+                <field name="contactaddress" type="textarea" default="Your adress" label="地址"/>
+                <field name="contactphone" type="text" default="Phone" label="电话"/>
+                <field name="contactfax" type="text" default="QQ" label="QQ"/>
+                
+               <field name="contactemail" type="text" default="admin@domail.com" label="邮箱"/>
+               <field name="contactgooglemapaddress" type="text" default="中国" label="Google地图显示的地址"/>
+			  <field type="admincss" /> 
+			     <fields name="top" type="position" label="Top Position">
+                    <field name="layout" type="positions" default="5,7" label="">
+                        <schemas>1,2,3,4,5,6</schemas>
+                        <words>2,3,4,5,6,7,8,9,10</words>
+                    </field>
+                    
+                    <field name="showall" type="toggle" default="0" label="Force Positions"/>
+                    <field name="showmax" type="showmax" default="6" label="Position Count"/>
+                </fields>
+               
+            </fieldset>
+            
+            
+            
+            <fieldset name="sampledata" description="" label="演示数据">
+
+                <field name="sampledatatips" type="html" panel_position="right" show_label="false">
+                    <html><![CDATA[
+					<h2>演示数据</h2>
+                                        
+					<p>这将导入的基本样本数据。它包括基本设置、主页、博客、滚动图片等演示数据，让新手可以给主题设置带来方便。</p>
+					]]>
+                    </html>
+                </field>
+             
+		
+                
+               <field name="importbutton" type="importbutton" default="" label=""/>
+               
+               
+            </fieldset>
+            
+             
+            
+          
+           
+                
+
+               
+            
+            
+            
+        </fields>
+    </config>
+</theme>

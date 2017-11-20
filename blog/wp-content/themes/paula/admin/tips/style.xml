@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip id="cssstyle" label="CSS Style"><![CDATA[The CSS Style setting allows you to easily change the whole look of your site. The different CSS styles are a selection of preset settings such as background colors and font settings. A little preview thumbnail can be seen in the Overview tab.]]></tip>
+	
+	<tip id="background-color" label="Background Color"><![CDATA[The Background Color setting provides the ability to easily change the color used as the background. Colors can be inputted via the Colorchooser popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip id="background-patern" label="Background Patern"><![CDATA[Choose Fix if you do not want moving background (it will stay fix and you can not scroll it). Choose Float to see your whole picture (you can sroll it but in some point your picture will propably end).]]></tip>
+	
+	<tip id="background-image" label="Background Image"><![CDATA[If you do not want to show background image choose No. It will be replaced by background color.]]></tip>
+	
+	<tip id="maincolor" label="Custom Main Color"><![CDATA[This will work only if you have selected custom CSS style. You can choose the color in which you would like to have the main elements.]]></tip>
+	
+	<tip id="bgcolor" label="Custom Background Color"><![CDATA[The Background Color setting provides the ability to easily change the color used as the background. Colors can be inputted via the Colorchooser popup selector or manually using a hex code in the input field.]]></tip>
+		
+	<tip id="linkcolor" label="Custom Link Color"><![CDATA[The Link Color setting provides the ability to easily change the color used to highlight links. Colors can be inputted via the Colorchooser popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip id="linkhovercolor" label="Custom Link Hover Color"><![CDATA[The Link Hover Color setting provides the ability to easily change the color used to highlight links. Colors can be inputted via the Colorchooser popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip id="thumbnailsize" label="Thumbnail Size"><![CDATA[You can set the thumbnail size of your picture that will be presented on the front page.]]></tip>
+	
+	<tip id="titlefont" label="Title font"><![CDATA[Here you can choose your title font from dropdown list.]]></tip>
+	
+	<tip id="textfont" label="Text font"><![CDATA[Here you can choose your text font from dropdown list.]]></tip>
+  
+  <tip label="Wordpress Comments"><![CDATA[Turn it on if you want to have enable comments by your posts.]]></tip>
+  
+  <tip id="customcss" label="Custom CSS"><![CDATA[Custom CSS allows you to implement your own styles in selected preset (it will paste inline css styles in code).]]></tip>
+	
+</gantrytips>

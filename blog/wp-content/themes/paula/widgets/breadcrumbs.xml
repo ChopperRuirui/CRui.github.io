@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="widget">
+		<field name="showonhomepage" type="list" label="Show on Homepage" description="Show breadcrumbs nn homapage and front page" default="0" class="widefat" readonly="false" >
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>       
+                <field name="hometext" type="text" label="Text for the Home item" description="Leave blank if you dont show Home" default="Home" class="widefat" readonly="false" />
+                <field name="delimiter" type="text" label="Delimiter" description="Delimiter between crumbs. Leave blank if you show preset for theme" default="" class="widefat" readonly="false" />
+                <field name="showcurrent" type="list" label="Show current crumb" description="Current crumbs dont have url" default="1" class="widefat" readonly="false" >
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+        </fieldset>
+</form>

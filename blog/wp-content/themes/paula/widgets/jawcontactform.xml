@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: style.xml 16565 2010-04-28 12:21:27Z ian $ -->
+<form>
+    <fieldset name="widget">
+        <field name="title" type="text" label="Title" description="Title" class="widefat" size="30" default="Contact Us" readonly="false"/>
+        <field name="captcha" type="list" label="Use Captcha" default="1" description="Use antispam" readonly="false">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field name="subject" type="text" label="E-mail subject" description="Subject" class="widefat" size="30" default="Contact Form" readonly="false"/>
+        <field name="mailto" type="text" label="E-mail to" description="Your email" class="widefat" size="30" default="yourmail@domain.tld" readonly="false"/>
+        <field name="thanks" type="textarea" label="Thanks message" description="Thanks message. We can use HTML code" class="widefat" size="30" default="Your email has been sent. Thank you." readonly="false"/>
+        <field name="error-name" type="text" label="Error message for name" description="Error message" class="widefat" size="30" default="Your name is required" readonly="false"/>
+	
+        <field name="error-mail" type="text" label="Error message for mail" description="Error message" class="widefat" size="30" default="Email address entered is invalid" readonly="false"/>
+        <field name="error-text" type="text" label="Error message for text" description="Error message" class="widefat" size="30" default="Please enter a message" readonly="false"/>
+        <field name="error-captcha" type="text" label="Error message for captcha" description="Error message" class="widefat" size="30" default="Incorrect security code" readonly="false"/>
+        <field name="submit-button" type="text" label="Label submit button" description="Label submit button" class="widefat" size="30" default="Send message" readonly="false"/>
+        <field name="label-name" type="text" label="Label name input" description="Label name input" class="widefat" size="30" default="Name *" readonly="false"/>
+        <field name="label-mail" type="text" label="Label mail input" description="Label mail input" class="widefat" size="30" default="E-mail *" readonly="false"/>
+	
+                
+                
+    </fieldset>
+</form>

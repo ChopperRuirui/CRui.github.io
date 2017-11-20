@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: /*.bmp$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.jpeg$
+Disallow: /*.jpg$
+Disallow: /wp-
+Disallow: /feed/
+Disallow: /comments/feed
+Disallow: /trackback/

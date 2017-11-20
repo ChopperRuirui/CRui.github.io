@@ -1,0 +1,12 @@
+.slides td.key {font-weight:bold;padding-right:20px}
+
+.slides td.key span {font-weight:normal;font-style: italic !important ;}
+#adminmenu #menu-posts-jawslides div.wp-menu-image {
+    background: url("slider-b.png") no-repeat scroll 7px 8px transparent;}
+    
+#adminmenu #menu-posts-jawslides:hover div.wp-menu-image, #adminmenu #menu-posts-jawslides.wp-has-current-submenu div.wp-menu-image {
+    background: url("slider-a.png") no-repeat scroll 7px 8px transparent;
+}    
+
+
+

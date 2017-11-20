@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: style.xml 16565 2010-04-28 12:21:27Z ian $ -->
+<form>
+	<fieldset name="widget">
+		<field name="title" type="text" label="Title" description="Title" class="widefat" size="30" default="Latest Tweets" readonly="false"/>
+		<field name="number" type="text" label="Number of Tweets" description="Number of tweets to show" class="widefat" size="30" default="3" readonly="false"/>		
+                <field name="nick" type="text" label="Nick" description="Nick" class="widefat" size="30" default="jawtemplates" readonly="false"/>		
+                
+       </fieldset>
+</form>

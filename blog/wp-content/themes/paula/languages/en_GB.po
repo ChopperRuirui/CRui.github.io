@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ere\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-04 14:53+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: terter <ter>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:12
+msgid "The active theme requires the Gantry Framework Plugin to be installed and active"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:19
+#: post_types/portfolio/portfolio.php:53
+msgid "Add New Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:20
+msgid "Edit Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:21
+msgid "New Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:22
+msgid "Preview Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:23
+#: post_types/portfolio/portfolio.php:52
+msgid "Search Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:24
+msgid "No portfolio found."
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:25
+msgid "No portfolio found in Trash."
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:32
+msgid "Portfolio options"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:34
+msgid "Categorie"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:50
+#: post_types/portfolio/portfolio.php:82
+msgid "Category"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:51
+msgid "All Portfolio"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:54
+msgid "New Portfolio Name"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:80
+msgid "Portfolio Title"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:81
+#: post_types/slides/slide.php:80
+msgid "Thumbnail"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:83
+msgid "Portfolio Type"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:84
+#: post_types/slides/slide.php:83
+msgid "Content"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:85
+#: post_types/slides/slide.php:84
+msgid "Order"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:102
+#: post_types/slides/slide.php:101
+msgid "No featured image."
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:120
+#: post_types/slides/slide.php:118
+msgid "No selected."
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:137
+msgid "No Type"
+msgstr ""
+
+#: post_types/portfolio/portfolio.php:182
+msgid "Portfolio Options"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:30
+msgid "Type"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:33
+msgid "Type of Page"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:34
+msgid "Specifies the type of portfolio post"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:48
+msgid "Player"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:57
+msgid "Width"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:61
+msgid "Height"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:66
+msgid "Source Media (url)"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:77
+msgid "URL Link (optional)"
+msgstr ""
+
+#: post_types/portfolio/metaboxes/metabox.php:81
+msgid "This link override page or post link."
+msgstr ""
+
+#: post_types/slides/slide.php:18
+msgid "Add New Slide"
+msgstr ""
+
+#: post_types/slides/slide.php:19
+msgid "Edit Slide"
+msgstr ""
+
+#: post_types/slides/slide.php:20
+msgid "New Slide"
+msgstr ""
+
+#: post_types/slides/slide.php:21
+msgid "Preview Slide"
+msgstr ""
+
+#: post_types/slides/slide.php:22
+msgid "Search Slides"
+msgstr ""
+
+#: post_types/slides/slide.php:23
+msgid "No slides found."
+msgstr ""
+
+#: post_types/slides/slide.php:24
+msgid "No slides found in Trash."
+msgstr ""
+
+#: post_types/slides/slide.php:31
+msgid "Slider options"
+msgstr ""
+
+#: post_types/slides/slide.php:33
+msgid "Slide"
+msgstr ""
+
+#: post_types/slides/slide.php:49
+msgid "Slideshows"
+msgstr ""
+
+#: post_types/slides/slide.php:50
+msgid "All Slideshows"
+msgstr ""
+
+#: post_types/slides/slide.php:51
+msgid "Search Slideshow"
+msgstr ""
+
+#: post_types/slides/slide.php:52
+msgid "Add New Slideshow"
+msgstr ""
+
+#: post_types/slides/slide.php:53
+msgid "New Slideshow Name"
+msgstr ""
+
+#: post_types/slides/slide.php:79
+msgid "Slide Title"
+msgstr ""
+
+#: post_types/slides/slide.php:81
+msgid "Slideshow"
+msgstr ""
+
+#: post_types/slides/slide.php:82
+msgid "Slide Type"
+msgstr ""
+
+#: post_types/slides/slide.php:127
+#: post_types/slides/metaboxes/metabox.php:29
+msgid "Open Lightbox"
+msgstr ""
+
+#: post_types/slides/slide.php:135
+msgid "No url"
+msgstr ""
+
+#: post_types/slides/slide.php:178
+msgid "Slide Options"
+msgstr ""
+
+#: post_types/slides/metaboxes/metabox.php:11
+msgid "Transition"
+msgstr ""
+
+#: post_types/slides/metaboxes/metabox.php:27
+msgid "Link type"
+msgstr ""
+
+#: post_types/slides/metaboxes/metabox.php:30
+msgid "Go to URL"
+msgstr ""
+
+#: post_types/slides/metaboxes/metabox.php:36
+msgid "Go to url"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:108
+#: sample/rockettheme/installer/importer.php:116
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:109
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:632
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:645
+msgid "Invalid file type"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:689
+msgid "Remote server did not respond"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:695
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:702
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:707
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: sample/rockettheme/installer/importer.php:713
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: sample/rockettheme/installer/parsers.php:42
+#: sample/rockettheme/installer/parsers.php:63
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: sample/rockettheme/installer/parsers.php:43
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: sample/rockettheme/installer/parsers.php:67
+#: sample/rockettheme/installer/parsers.php:72
+#: sample/rockettheme/installer/parsers.php:262
+#: sample/rockettheme/installer/parsers.php:451
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: sliders/freshcubes.php:142
+msgid "You don't have any slides to display. Please, goto the administration and add slide and setup slideshow category in the template administration."
+msgstr ""
+
+#: html/templates/blog/blog1b.php:239
+#: html/templates/blog/blog1s.php:216
+#: html/templates/blog/blog2s.php:217
+#: html/templates/blog/blogfullb.php:229
+#: html/templates/blog/blogfulls.php:214
+#: html/templates/blog/blog2b.php:215
+#: html/templates/single/item1b.php:101
+msgid "Featured"
+msgstr ""
+
+#: html/gantrymenu/themes/itemfields.php:22
+msgid "Subtext"
+msgstr ""
+
+#: html/gantrymenu/themes/itemfields.php:31
+msgid "Icon"
+msgstr ""
+
+#: html/gantrymenu/themes/itemfields.php:58
+msgid "Number of Columns in Submenu"
+msgstr ""
+
+#: html/gantrymenu/themes/catalog.php:9
+msgid "Gantry Fusion"
+msgstr ""
+
+#: html/gantrymenu/themes/catalog.php:11
+msgid "Gantry SplitMenu"
+msgstr ""
+
+#: html/gantrymenu/themes/catalog.php:13
+msgid "Gantry Touch"
+msgstr ""
+

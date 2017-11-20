@@ -1,0 +1,8 @@
+#errorboxheader {font-size: 40px;line-height: 40px;margin-bottom: 15px;}
+#errorboxbody ol {margin-bottom: 15px;}
+#errorboxbody ul {margin-bottom: 15px;}
+#errorboxbody .pbackhomelink a.button {border: medium none; border-radius: 3px 3px 3px 3px;
+    cursor: pointer;font-size: 12px;padding: 3px 8px;}
+
+
+

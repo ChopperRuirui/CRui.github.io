@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip id="cssstyle" label="Jaw Slider"><![CDATA[Select the speed of animation. Select a slideshow of images you want to show on your web. If you don´t have any slideshow select All slides to see all pictures which you have uploaded to your slider (how to manage with your slides see in another chapter). ]]></tip>
+	
+	<tip id="bgcolor" label="Jaw Slider Navigation"><![CDATA[Select if you want to show thumbnails of slider images (under the slider in our demo).]]></tip>
+			
+</gantrytips>

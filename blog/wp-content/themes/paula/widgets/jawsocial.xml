@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<form>
+	<fieldset name="widget">
+		<field name="facebook" type="text" label="Facebook" description="Name of account. leave it blank if you dont show icon. " class="widefat" size="30" default="" readonly="false"/>
+                <field name="linkedin" type="text" label="LinkedIn" description="Name of account. Leave it blank if you dont show icon. " class="widefat" size="30" default="" readonly="false"/>
+		<field name="twitter" type="text" label="Twitter" description="Name of account. Leave it blank if you dont show icon. " class="widefat" size="30" default="" readonly="false"/>
+		<field name="digg" type="text" label="Digg" description="Name of account. Leave it blank if you dont show icon. " class="widefat" size="30" default="" readonly="false"/>
+		<field name="flickr" type="text" label="Flickr" description="Name of account. Leave it blank if you dont show icon. " class="widefat" size="30" default="" readonly="false"/>        
+        </fieldset>
+</form>
